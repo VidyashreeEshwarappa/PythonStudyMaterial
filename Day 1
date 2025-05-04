@@ -1,0 +1,57 @@
+Python Data Types
+1. Numeric Types
+int: Integer numbers 
+e.g., 5, -100, 0
+Syntax: x = 10    
+
+float: Floating-point numbers 
+e.g., 3.14, -0.001
+Syntax: y = 3.14  
+
+complex: Complex numbers 
+e.g., 2 + 3j
+Syntax: z = 2 + 3j
+
+2. Sequence Types
+str: String 
+e.g., "hello", 'Python3'
+name = "Alice"
+
+list: Ordered, mutable collection 
+e.g., [1, 2, 3]
+Syntax:fruits = ["apple", "banana", "cherry"]
+
+tuple: Ordered, immutable collection 
+e.g., (1, 2, 3)
+Syntax: colors = ("red", "green", "blue")
+
+3. Set Types
+set: Unordered collection of unique elements 
+e.g., ({1, 2, 3})
+Syntax: items = {"apple", "banana", "cherry"}
+
+frozenset: Immutable version of a set
+Syntax: frozen = frozenset(["a", "b", "c"]) 
+
+4. Mapping Type
+dict: Key-value pairs 
+e.g., {'name': 'Alice', 'age': 25}
+Syntax: person = {"name": "John", "age": 30}   
+
+5. Boolean Type
+bool: Boolean values True or False
+Syntax: flag = True
+
+6. Binary Types
+bytes: Immutable sequence of bytes 
+e.g., b'abc'
+Syntax: b = b"hello" 
+
+bytearray: Mutable sequence of bytes
+Syntax: ba = bytearray([65, 66, 67])
+
+memoryview: Memory view object for efficient memory access
+Syntax: mv = memoryview(b"hello")
+
+7. None Type
+NoneType: Represents the absence of a value (None)
