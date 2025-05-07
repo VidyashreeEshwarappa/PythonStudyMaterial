@@ -1,4 +1,4 @@
-Python Data Types
+Concept: Python Data Types
 1. Numeric Types
 int: Integer numbers 
 e.g., 5, -100, 0
@@ -55,3 +55,170 @@ Syntax: mv = memoryview(b"hello")
 
 7. None Type
 NoneType: Represents the absence of a value (None)
+
+Concept:
+Built-in Functions:
+
+Python includes many built-in functions that you can use immediately, without needing to import anything or set up additional 
+configurations. These functions are always available in your programs. Common examples include: print(), len(), type(), int(),
+float(), str(), input(), list(), dict(), min(), max(), sum(), sorted(), open(), file(), help(), and dir(). A complete list of 
+Python’s built-in functions, as found in the official documentation, is shown in the table below.
+
+| Keyword    | Description                              |
+| ---------- | ---------------------------------------- |
+| `False`    | Boolean value false                      |
+| `None`     | Represents the absence of a value        |
+| `True`     | Boolean value true                       |
+| `and`      | Logical AND operator                     |
+| `as`       | Used to create an alias                  |
+| `assert`   | Used for debugging, tests a condition    |
+| `async`    | Defines an asynchronous function         |
+| `await`    | Waits for an async operation to complete |
+| `break`    | Exits the current loop                   |
+| `class`    | Defines a class                          |
+| `continue` | Skips the current iteration in a loop    |
+| `def`      | Defines a function                       |
+| `del`      | Deletes objects                          |
+| `elif`     | Else if condition                        |
+| `else`     | Else block in conditional statements     |
+| `except`   | Handles exceptions in try block          |
+| `finally`  | Block that runs no matter what           |
+| `for`      | Looping construct                        |
+| `from`     | Imports specific parts of a module       |
+| `global`   | Declares a global variable               |
+| `if`       | Conditional statement                    |
+| `import`   | Imports a module                         |
+| `in`       | Checks for membership in a sequence      |
+| `is`       | Tests object identity                    |
+| `lambda`   | Creates an anonymous function            |
+| `nonlocal` | Declares a non-local variable            |
+| `not`      | Logical NOT operator                     |
+| `or`       | Logical OR operator                      |
+| `pass`     | A null statement (placeholder)           |
+| `raise`    | Raises an exception                      |
+| `return`   | Exits a function and returns a value     |
+| `try`      | Tries a block of code for errors         |
+| `while`    | While loop                               |
+| `with`     | Context manager usage                    |
+| `yield`    | Returns a generator                      |
+| `match`    | Pattern matching (Python 3.10+)          |
+| `case`     | Used in pattern matching                 |
+
+Note: You can type help("keyword") in the Python interactive shell or script to get documentation. 
+      Example: help("for")
+
+Concept: Variables
+Variables are used to store data in a computer’s memory, allowing you to work with that data throughout your program. 
+In Python—and most programming languages—it’s best practice to use "mnemonic variable names", which are descriptive and easy 
+to remember. For example, using `age` or `username` instead of just `x` or `a` makes your code more readable and 
+maintainable.
+
+Each variable essentially acts as a reference to a specific memory location where the value is stored. 
+While it's technically allowed to use short variable names like `x`, `y`, or `z`, it's highly encouraged to use more 
+meaningful names like `first_name`, `total_amount`, or `user_age`—especially in larger or collaborative projects.
+
+When naming variables in Python, follow these rules:
+
+* ✅ A variable "must begin with a letter" (A–Z or a–z) or an "underscore" `_`.
+* ❌ A variable "cannot start with a number" (e.g., `2name` is invalid).
+* ✅ Variable names can include "letters, numbers, and underscores only" (e.g., `user_1`, `total_amount`).
+* ❌ Special characters like `@`, `#`, `-`, or spaces are "not allowed".
+* ✅ Variable names are "case-sensitive": `name`, `Name`, and `NAME` are all considered different variables.
+
+Additional Best Practices
+
+* ✅ Use "snake\_case" (lowercase words separated by underscores) for variable names in Python, such as `first_name`, 
+`email_address`.
+* ❌ Avoid using Python **keywords** (like `for`, `if`, `class`) as variable names.
+* ✅ Choose names that reflect the **type or purpose** of the data they hold.
+
+When a specific value or data type is given to a variable, the process is known as variable declaration. For example, 
+in the code below, the string representing a first name is stored in a variable named first_name. The equal sign (=) is 
+used as the assignment operator in Python. This means it assigns or stores the value on the right-hand side into the 
+variable on the left-hand side. It's important to note that in Python, the equal sign does not represent equality as 
+it does in mathematics—it simply performs assignment.
+
+Example:
+first_name = "Alice"
+
+Let’s explore how to use the built-in Python functions print() and len(). The print() function can accept multiple 
+arguments, meaning you can pass in several values separated by commas. These values are placed inside the parentheses of 
+the function. Each value you pass is called an argument—it’s the data you provide for the function to work with.
+
+example:
+name = "Alice"
+age = 25
+print("Name:", name, "| Age:", age)
+
+output: 
+Name: Alice | Age: 25
+
+In Python, you can assign values to multiple variables at the same time in one line. This is a concise and efficient 
+way to initialize several variables in a single statement.
+
+example:
+
+name, age, country = "Alice", 25, "Canada"
+print(name)     # Output: Alice
+print(age)      # Output: 25
+print(country)  # Output: Canada
+
+Receiving User Input with the input() Function
+In Python, you can use the built-in input() function to get input from the user. The data entered by the user can be 
+stored in variables for later use. For example, you can prompt the user to enter their first name and age, and then 
+assign those values to variables.
+
+example:
+
+first_name = input("Enter your first name: ")
+age = input("Enter your age: ")
+
+print("Hello,", first_name + "! You are", age, "years old.")
+
+Concept: Type Casting in Python
+Type casting refers to converting a value from one data type to another. In Python, you can perform explicit type casting 
+using built-in functions like int(), float(), str(), etc.
+
+1. Implicit Type Casting (Automatic Casting)
+Python automatically converts one data type to another when necessary. This is known as implicit type casting or automatic 
+type conversion.
+
+Example:
+x = 10        # int
+y = 3.5       # float
+
+result = x + y  # x is automatically converted to float
+print(result)   # Output: 13.5 (float)
+
+Here, the integer x is automatically converted to a float when added to the float y.
+
+2. Explicit Type Casting (Manual Casting)
+You can manually convert one data type to another using explicit type casting. You do this by using functions like int(), 
+float(), str(), etc.
+
+Example:
+Converting from float to int:
+
+float_number = 3.14
+int_number = int(float_number)  # Cast float to int
+print(int_number)  # Output: 3
+
+Important Notes on Type Casting:
+*Type casting is useful when you need to change the type of data to perform specific operations.
+*Be cautious when converting types to avoid errors (e.g., trying to convert a non-numeric string to an integer).
+*Python will perform implicit casting where possible, but explicit casting is necessary in some cases, such as when 
+converting strings or handling incompatible types.
+
+Numbers
+Number data types in Python:
+
+Integers: Integer(negative, zero and positive) numbers Example: ... -3, -2, -1, 0, 1, 2, 3 ...
+Floating Point Numbers(Decimal numbers) Example: ... -3.5, -2.25, -1.0, 0.0, 1.1, 2.2, 3.5 ...
+Complex Numbers Example: 1 + j, 2 + 4j, 1 - 1j
+
+
+
+
+
+
+
