@@ -133,3 +133,118 @@ These operators perform basic mathematical operations.
 % : Modulo (returns the remainder of division)
 ** : Exponentiation (raises a number to the power)
 
+Example:
+a = 10
+b = 3
+print(a + b)  # 13
+print(a // b) # 3
+print(a % b)  # 1
+print(a ** b) # 1000
+
+2. Comparison Operators
+These operators are used to compare values and return a boolean result (True or False).
+
+== : Equal to
+!= : Not equal to
+> : Greater than
+< : Less than
+>= : Greater than or equal to
+<= : Less than or equal to
+
+Example:
+x = 5
+y = 10
+print(x == y) # False
+print(x != y) # True
+print(x < y)  # True
+
+3. Logical Operators
+Used to perform logical operations between boolean values.
+
+and : Returns True if both operands are true
+or : Returns True if at least one operand is true
+not : Reverses the logical state (inverts True to False and vice versa)
+
+Example:
+a = True
+b = False
+print(a and b)  # False
+print(a or b)   # True
+print(not a)    # False
+
+4. Assignment Operators
+These operators are used to assign values to variables.
+
+= : Simple assignment
++= : Add and assign
+-= : Subtract and assign
+*= : Multiply and assign
+/= : Divide and assign
+//=: Floor divide and assign
+%= : Modulo and assign
+**=: Exponentiate and assign
+
+Example:
+x = 5
+x += 3  # x = x + 3 (x becomes 8)
+x *= 2  # x = x * 2 (x becomes 16)
+
+5. Identity Operators
+These operators compare the memory location of two objects.
+
+is : Returns True if both operands refer to the same object
+is not : Returns True if both operands do not refer to the same object
+
+Example:
+a = [1, 2, 3]
+b = a
+print(a is b)  # True
+print(a is not b)  # False
+
+6. Membership Operators
+These operators are used to check if a value is a member of a sequence (like a list, string, etc.).
+
+in : Returns True if the value is found in the sequence
+not in : Returns True if the value is not found in the sequence
+
+Example:
+lst = [1, 2, 3]
+print(1 in lst)     # True
+print(4 not in lst) # True
+
+7. Bitwise Operators
+These operators are used for performing bit-level operations.
+
+& : Bitwise AND
+| : Bitwise OR
+^ : Bitwise XOR (exclusive OR)
+~ : Bitwise NOT (inverts the bits)
+<< : Left shift
+>> : Right shift
+
+Example:
+a = 5  # (binary: 0101)
+b = 3  # (binary: 0011)
+print(a & b)  # 1 (binary: 0001)
+print(a | b)  # 7 (binary: 0111)
+
+8. Ternary (Conditional) Operator
+A shorthand for if-else conditions.
+
+value_if_true if condition else value_if_false
+
+Example:
+age = 20
+status = "Adult" if age >= 18 else "Minor"
+print(status)  # Adult
+
+9. Lambda Operator
+The lambda function creates small anonymous functions.
+
+Example:
+square = lambda x: x ** 2
+print(square(4))  # 16
+
+
+
+
