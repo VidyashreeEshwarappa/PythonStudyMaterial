@@ -1,0 +1,135 @@
+Concept: Boolean 
+In Python, the Boolean data type is used to represent truth values: either True or False. These values are fundamental in programming and are often used in 
+conditional statements, loops, and logical operations.
+Boolean Values
+There are only two Boolean values in Python:
+True: Represents a true or positive condition.
+False: Represents a false or negative condition.
+
+Booleans are often the result of comparisons, logical operations, or conditions.
+Using Boolean Values
+Booleans are mainly used to evaluate conditions and make decisions in the program. Python's conditional statements (if, else, elif) rely heavily on Boolean values to 
+determine which code block should be executed.
+
+Example 1: Basic Boolean Assignment
+is_raining = True
+is_sunny = False
+
+print(is_raining)  # Output: True
+print(is_sunny)    # Output: False
+
+In this example:
+is_raining is assigned the Boolean value True.
+is_sunny is assigned the Boolean value False.
+
+Example 2: Using Boolean in Conditional Statements
+is_adult = True
+if is_adult:
+    print("You are an adult.")
+else:
+    print("You are not an adult.")
+
+Here, the condition if is_adult: evaluates the Boolean value True. Since it is True, the program prints "You are an adult."
+
+Comparison Operators and Boolean Values
+Boolean values often result from comparison operators. These operators compare two values and return a Boolean result (True or False).
+==: Equal to
+!=: Not equal to
+<: Less than
+>: Greater than
+<=: Less than or equal to
+>=: Greater than or equal to
+
+Example 3: Using Comparison Operators
+
+x = 5
+y = 10
+print(x == y)  # Output: False
+print(x < y)   # Output: True
+print(x != y)  # Output: True
+
+In this example:
+x == y checks if x and y are equal. The result is False because 5 is not equal to 10.
+x < y checks if x is less than y. The result is True because 5 is less than 10.
+x != y checks if x is not equal to y. The result is True because 5 is not equal to 10.
+
+Boolean in Logical Operations
+
+Boolean values can be used with logical operators to combine or manipulate them.
+and: Returns True if both conditions are True.
+or: Returns True if at least one condition is True.
+not: Reverses the Boolean value (True becomes False, and vice versa).
+
+Example 4: Using and, or, and not
+x = 5
+y = 10
+is_sunny = True
+is_weekend = False
+# Using 'and'
+print(is_sunny and is_weekend)  # Output: False (both need to be True for 'and' to return True)
+# Using 'or'
+print(is_sunny or is_weekend)  # Output: True (only one needs to be True for 'or' to return True)
+# Using 'not'
+print(not is_sunny)  # Output: False (negates the original value)
+
+In this example:
+
+is_sunny and is_weekend returns False because both conditions are not True.
+is_sunny or is_weekend returns True because at least one of the conditions (is_sunny) is True.
+not is_sunny negates the value of is_sunny, turning True into False.
+
+Boolean Context in Python
+In Python, several values are considered "falsy", meaning they are treated as False in a Boolean context. These include:
+
+None
+False
+0 (zero of any numeric type)
+"" (empty string)
+[] (empty list)
+{} (empty dictionary)
+() (empty tuple)
+
+Any value not in the falsy list is considered truthy, meaning it is treated as True.
+
+Example 5: Falsy and Truthy Values
+if 0:
+    print("This is truthy.")
+else:
+    print("This is falsy.")  # Output: This is falsy.
+if "Hello":
+    print("This is truthy.")  # Output: This is truthy.
+
+Boolean in User Input
+Since the input() function always returns a string, you may need to convert it to a Boolean for use in logical conditions.
+
+Example 6: Converting User Input to Boolean
+
+user_input = input("Do you want to continue? (yes/no): ").lower()
+if user_input == "yes":
+    continue_action = True
+else:
+    continue_action = False
+print("Continue:", continue_action)
+
+Here, the program takes user input, converts it to lowercase, and assigns True if the input is "yes". Otherwise, it assigns False.
+
+Note:
+
+Boolean values are used to represent truth values (True or False).
+They are fundamental for making decisions and controlling the flow of a program using conditional statements.
+Boolean values often result from comparison or logical operations.
+Falsy values like 0, "", and None are treated as False in conditional checks.
+
+Concept: Operators
+
+1. Arithmetic Operators
+These operators perform basic mathematical operations.
+
++ : Addition
+- : Subtraction
+* : Multiplication
+/ : Division (returns float)
+// : Floor Division (returns the integer part of the division)
+% : Modulo (returns the remainder of division)
+** : Exponentiation (raises a number to the power)
+
